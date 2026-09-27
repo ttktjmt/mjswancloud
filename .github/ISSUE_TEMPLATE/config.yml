@@ -1,0 +1,17 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Ask a question
+    url: https://github.com/ttktjmt/mjswancloud/discussions/categories/q-a
+    about: How to publish, embed, or use mjswan Cloud.
+  - name: Suggest a feature
+    url: https://github.com/ttktjmt/mjswancloud/discussions/categories/ideas
+    about: Ideas are collected and discussed in Discussions.
+  - name: Report a security vulnerability
+    url: https://github.com/ttktjmt/mjswancloud/security/advisories/new
+    about: Report it privately. Please do not open a public issue.
+  - name: Report a simulation
+    url: https://mjswan.com/terms
+    about: Copyright notices go to dmca@mjswan.com. Other violations go to legal@mjswan.com. Please keep these out of public issues.
+  - name: Your personal data
+    url: https://mjswan.com/privacy
+    about: To access, correct, or delete your data, write to privacy@mjswan.com.

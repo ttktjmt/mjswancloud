@@ -1,0 +1,70 @@
+name: Bug report
+description: Something on mjswan Cloud is broken, or a simulation does not load.
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        If a simulation does not load or a publish is refused, the [troubleshooting guide](https://github.com/ttktjmt/mjswancloud/blob/main/docs/troubleshooting.md) may already have the answer. Security problems should be [reported privately](https://github.com/ttktjmt/mjswancloud/security/advisories/new), not here.
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Where did it happen?
+      options:
+        - Watching a simulation on mjswan.com
+        - A simulation embedded on another site
+        - Publishing with mjswan publish
+        - Publishing from the upload page
+        - Studio
+        - Account, sign-in, or profile
+        - Somewhere else
+    validations:
+      required: true
+
+  - type: input
+    id: simulation
+    attributes:
+      label: Simulation link
+      description: The page where it happens, if there is one.
+      placeholder: https://mjswan.com/s/abc1234
+    validations:
+      required: false
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: What you did, what you expected, and what happened instead. Include any message shown on the page.
+    validations:
+      required: true
+
+  - type: textarea
+    id: output
+    attributes:
+      label: Error output
+      description: |
+        For a simulation that does not load: the browser console (F12, then the Console tab).
+        For a refused publish: the full output of `mjswan publish`, or the message on the upload page.
+        Remove access tokens before posting.
+      render: shell
+    validations:
+      required: false
+
+  - type: input
+    id: environment
+    attributes:
+      label: Browser and OS
+      description: For a problem with the command line, the OS is enough.
+      placeholder: Chrome on Windows 11
+    validations:
+      required: true
+
+  - type: input
+    id: mjswan-version
+    attributes:
+      label: mjswan version
+      description: For a publishing problem. Run `pip show mjswan`, or read `version` in your build's `manifest.json`.
+      placeholder: 0.11.1
+    validations:
+      required: false
