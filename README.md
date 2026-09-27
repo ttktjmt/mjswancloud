@@ -13,8 +13,6 @@
   <img src="https://img.shields.io/badge/status-open%20beta-e8a33d" alt="Status: open beta">
 </p>
 
-This repository is where mjswan Cloud collects **bug reports, questions, and feedback**.
-
 
 ## Where to go
 
@@ -35,6 +33,8 @@ This repository is where mjswan Cloud collects **bug reports, questions, and fee
 Build a simulation with mjswan, publish it, and get a page you can share and embed on your own site. The simulation runs in the viewer's browser.
 
 Only the data files of a build are uploaded, such as the scene, the policies, and license files. mjswan Cloud renders them with its own copy of the engine and never runs code from a build.
+
+This repository is where mjswan Cloud collects **bug reports, questions, and feedback**.
 
 
 ## Publish a simulation
