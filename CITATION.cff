@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+title: mjswancloud
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - name: mjswancloud Developers
+identifiers:
+  - type: url
+    value: 'https://mjswan.com'
+repository-code: 'https://github.com/ttktjmt/mjswancloud'
+url: 'https://mjswan.com'
+abstract: >-
+  A platform for interactive RL simulations built with
+  mjswan
+keywords:
+  - mjswan
+  - reinforcement-learning
+  - mujoco
+  - onnx
